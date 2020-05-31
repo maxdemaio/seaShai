@@ -7,9 +7,19 @@
     margin: auto;
 }
 
-img {
+#logo-images {
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+img {
+    margin-left: 10px;
+    margin-right: 10px;
     width: 250px;
     border-radius: 125px;
+}
+
+.list-group {
+  display: table !important;
+  margin: 0 auto !important;
 }
