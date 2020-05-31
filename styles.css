@@ -1,0 +1,15 @@
+#content {
+    text-align: center;
+}
+
+#about {
+    max-width: 700px;
+    margin: auto;
+}
+
+img {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 250px;
+    border-radius: 125px;
+}
