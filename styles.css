@@ -1,3 +1,11 @@
+body {
+    background-color: #d9d9d9 !important;
+    color: #252525 !important;
+}
+
+h1, h2, h3 {
+    color: #af0404 !important;
+}
 #content {
     text-align: center;
 }
@@ -7,13 +15,19 @@
     margin: auto;
 }
 
-img {
+#logo-images {
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+img {
+    margin-left: 10px;
+    margin-right: 10px;
     width: 250px;
     border-radius: 125px;
 }
 
-.menu-section {
-    margin-bottom: 30px;
+.list-group {
+  display: table !important;
+  margin: 0 auto !important;
 }
