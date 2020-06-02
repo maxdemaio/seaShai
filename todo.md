@@ -5,6 +5,7 @@
     * Hover psuedo-class that makes it go darker on hover
     * Red arrow for drop down
     * Wait for chloe to merge her python file to start working on parsing
+    * Add links to Facebook at bottom 
 
 ## Chloe
 * Update about section
