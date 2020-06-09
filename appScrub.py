@@ -47,11 +47,28 @@ appetizers = """<h3>Grilled</h3>
             D7 Edamame 4.00
     </div>
 """
-
+## Preliminary lists
+# Overarching app list, empty list for menu items
 appList = appetizers.split("\n")
+menuItems = []
 
+## Final lists
+# Item numbers, items, headers, prices
+itemNumbers = []
+finalMenuItems = []
+headers = []
+prices = []
+
+# Get all the items for appetizers
 for x in appList:
     if "<h3>" in x:
         pass
     else:
-        print(x)
+        menuItems.append(x.strip())
+
+# Strip the numbers from menu items to arrive at final product
+for item in menuItems:
+    splitString = item.split(" ")
+    itemNumbers.append(splitString[0])
+    finalMenuItems.append(" ".join(splitString[1:]))
+
