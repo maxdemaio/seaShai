@@ -29,17 +29,19 @@ img {
     border-radius: 125px;
 }
 
-.list-group {
-  display: table !important;
-  margin: 0 auto !important;
-}
-
 /* Menu stylings */
 #menu {
     background-color: #ffff;
+    margin: 0px 30px;
+    padding: 10px;
 }
 
 .menu-selection {
     background-color: #cdcdcd;
     padding: 5px;
+    text-align: center;
+}
+
+.price {
+    color: #af0404;
 }
