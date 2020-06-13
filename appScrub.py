@@ -83,10 +83,11 @@ print()
 
 # Wrap headers in description header tag
 for header in headers:
-    print("<dt>" + header + "</dt>")
+    print("<div class='card-header'>" + "<span><strong>" +
+          header + "</strong></span>" + "</div>")
 
 print() 
 
 # Wrap menu items in description data tag
 for x in range(0, len(finalMenuItems)):
-    print("<dd>" + finalMenuItems[x] + " | <span class='price'>" + prices[x] + "</span>" + "</dd>")
+    print("<li class='list-group-item list-group-item-action'>" + finalMenuItems[x] + " <span class='price float-right'>" + "$" + prices[x] + "</span>" + "</li>")

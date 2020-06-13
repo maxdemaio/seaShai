@@ -2,9 +2,8 @@
 
 ## Max
 * Create menu section with basic example 
-    * Hover psuedo-class that makes it go darker on hover
     * Red arrow for drop down
-    * Add Yelp and FB icons to bottom
+    * Add Yelp and FB links and style in red
 
 ## Chloe
 * Update about section

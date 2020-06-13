@@ -6,40 +6,50 @@ body {
 
 h1, h2, h3 {
     color: #af0404 !important;
+    margin-top: 10px;
 }
+
 #content {
     text-align: center;
-}
-
-/* Header and About stylings */
-#about {
-    max-width: 700px;
-    margin: auto;
-}
-
-#logo-images {
-    margin-top: 10px;
     margin-bottom: 20px;
 }
 
-img {
-    margin-left: 10px;
-    margin-right: 10px;
+/* About */
+#about {
+    text-align: left;
+    max-width: 800px;
+    padding: 5px;
+    margin: auto;
+}
+
+/* Hours Info */
+#social {
+    display: table;
+    margin: 0 auto;
+}
+
+.my-link {
+    color: #af0404;
+}
+
+.my-link:hover { 
+    color:#af0404; 
+}
+
+/* Image stylings */
+#logo-images {
     width: 250px;
     border-radius: 125px;
 }
 
 /* Menu stylings */
 #menu {
-    background-color: #ffff;
-    margin: 0px 30px;
     padding: 10px;
 }
 
 .menu-selection {
-    background-color: #cdcdcd;
-    padding: 5px;
-    text-align: center;
+    text-align: left;
+    /* text-align: center; */
 }
 
 .price {
