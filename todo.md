@@ -2,7 +2,7 @@
 
 ## Max
 * Create menu section with basic example 
-    * Red arrow for drop down
+    * Rework nav redirects (shouldn't be maintained in url)
     * Add Yelp and FB links and style in red
 
 ## Chloe
