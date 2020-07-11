@@ -74,6 +74,8 @@ for item in menuItems:
     prices.append(splitString[-1])
     finalMenuItems.append(" ".join(splitString[1:-1]))
 
+print(itemNumbers)
+print()
 print(finalMenuItems)
 print()
 print(headers)
@@ -90,4 +92,6 @@ print()
 
 # Wrap menu items in description data tag
 for x in range(0, len(finalMenuItems)):
-    print("<li class='list-group-item list-group-item-action'>" + finalMenuItems[x] + " <span class='price float-right'>" + "$" + prices[x] + "</span>" + "</li>")
+    print("<li class='list-group-item list-group-item-action'>" + 
+        "<span class='itemNum'>" + itemNumbers[x] + ": </span>" + finalMenuItems[x] +
+        " <span class='price float-right'>" + "$" + prices[x] + "</span>" + "</li>")

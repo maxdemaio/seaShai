@@ -46,7 +46,8 @@ h1, h2, h3 {
     text-align: left;
 }
 
-.price {
+/* Item numbers and price red style */
+.price, .itemNum {
     color: #af0404;
 }
 
