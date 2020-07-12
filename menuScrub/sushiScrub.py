@@ -76,8 +76,9 @@ appList = appetizers.split("\n")
 menuItems = []
 
 ## Final lists
-# Item numbers, items, headers, prices
+# Item numbers, sushiContents, items, headers, prices
 itemNumbers = []
+sushiContents = []
 finalMenuItems = []
 headers = []
 prices = []
@@ -92,11 +93,27 @@ for x in appList:
 # Split each string up on spaces and assign accordingly
 for item in menuItems:
     splitString = item.split(" ")
-    # print(splitString)
-    itemNumbers.append(splitString[0])
+    # Try and get numbers after 'Dr'
+    try:
+        itemNumbers.append(splitString[0] + splitString[1])
+    except:
+        itemNumbers.append(splitString[0])
+    
     prices.append(splitString[-1])
-    finalMenuItems.append(" ".join(splitString[1:-1]))
+    finalMenuItem = " ".join(splitString[1:-1])
+    # To put the contents of sushi in grey, grab contents
+    detailSep = finalMenuItem.split("-")
+    finalMenuItems.append(detailSep[0])
+    try:
+        sushiContents.append("(" + detailSep[1].strip() + ")")
+    except:
+        sushiContents.append("")
 
+print()
+print(sushiContents)
+print()
+print(itemNumbers)
+print()
 print(finalMenuItems)
 print()
 print(headers)
@@ -106,11 +123,14 @@ print()
 
 # Wrap headers in description header tag
 for header in headers:
-    print("<dt>" + header + "</dt>")
+    print("<div class='card-header'>" + "<span><strong>" +
+          header + "</strong></span>" + "</div>")
 
 print()
 
 # Wrap menu items in description data tag
 for x in range(0, len(finalMenuItems)):
-    print("<dd>" + finalMenuItems[x] +
-          " | <span class='price'>" + prices[x] + "</span>" + "</dd>")
+    print("<li class='list-group-item list-group-item-action'>" +
+          "<span class='itemNum'>" + itemNumbers[x] + ": </span>" + finalMenuItems[x] + 
+          "<span class='text-muted'>" + sushiContents[x] + "</span>" +
+          " <span class='price float-right'>" + "$" + prices[x] + "</span>" + "</li>")
