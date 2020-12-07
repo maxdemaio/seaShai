@@ -117,14 +117,14 @@
                         <p class="lead">Example talking about how the menu is structured.<p>
                     </div>
             
-                <div class="menu-selection collapse" id="appetizers">
-                    <div id="flexy-image">
-                        <!-- add words to images in GIMP (maybe use the highest priced foods or most popular) -->
-                        <img src="./static/images/gyoza2.jpg" alt="gyoza-picture">
-                        <img src="./static/images/seaweedSalad2.jpg" alt="seaweed-picture">
-                        <img src="./static/images/bibimbap.jpg" alt="bibimbap">
+                    <div>
+                        <button class="btn btn-dark btn-lg btn-block dropdown-toggle mb-2" type="button" data-toggle="collapse"
+                            data-target="#sushi-carte" aria-expanded="false" aria-controls="collapseExample">
+                            Appetizers
+                        </button>
                     </div>
-            
+                
+                <div class="menu-selection collapse" id="sushi-carte">
                     <div class="container">
                         <div class="row mb-2">
                             <div class="col-12">
@@ -696,7 +696,7 @@
                     us a call at <strong><span class="my-link">(401)-619-0968</span></strong>.</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
+                    <img class="featurette-image img-fluid mx-auto my-feat" src="static/images/chef.jpg"
                         alt="Generic placeholder image">
                 </div>
             </div>
@@ -741,8 +741,9 @@
 
         <!-- FOOTER -->
         <footer class="container">
-            <p class="float-right"><a href="#">Back to top</a></p>
-            <p>&copy; New Sea Shai &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            <p class="float-right"><a class="my-link" href="#">Back to top</a></p>
+            <p>&copy; New Sea Shai &middot; <a class="my-link" href="https://www.facebook.com/NewSeaShaiRestaurant">Our Facebook page</a> &middot; 
+                <a class="my-link" href="https://www.yelp.com/biz/new-seashai-restaurant-middletown-3">Yelp reviews</a></p>
         </footer>
     </main>
 

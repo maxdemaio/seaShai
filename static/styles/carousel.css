@@ -104,6 +104,10 @@ body {
     color:#af0404; 
 }
 
+.my-feat {
+  border-radius: 5px;
+}
+
 /* Menu stylings */
 #menu {
     padding: 10px;
@@ -116,16 +120,4 @@ body {
 /* Item numbers and price red style */
 .price, .itemNum {
     color: #af0404;
-}
-
-/* Image previews for menus */
-#flexy-image {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-#flexy-image img {
-    width: 300px;
-    margin-bottom: 5px;
 }
