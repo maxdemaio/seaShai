@@ -1,5 +1,7 @@
 # TODO List
 
+ Images should just be 500x500
+ 
 ## Max
 * Create menu section with basic example 
     * Rework nav redirects JS transitions?
