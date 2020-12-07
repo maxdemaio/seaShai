@@ -8,6 +8,9 @@ body {
   color: #5a5a5a;
 }
 
+::selection {
+  background: #ffb7b7;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
