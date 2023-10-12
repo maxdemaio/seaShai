@@ -60,13 +60,13 @@
 
         <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li style="opacity: 0.5;" data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li style="opacity: 0.5;" data-target="#myCarousel" data-slide-to="1"></li>
-                <li style="opacity: 0.5;" data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="overlay-image" style="background-image: url(static/images/slider-1.jpg);"></div>
+                    <div class="overlay-image" style="background-image: url(static/images/slider-1.jpg); opacity: 0.5;"></div>
                     <div class="container">
                         <div class="carousel-caption text-right">
                             <h1>New Sea Shai.</h1>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="overlay-image" style="background-image: url(static/images/slider-2.jpg);"></div>
+                    <div class="overlay-image" style="background-image: url(static/images/slider-2.jpg); opacity: 0.5;"></div>
                     <div class="container">
                         <div class="carousel-caption text-right">
                             <h1>New Sea Shai.</h1>
@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="overlay-image" style="background-image: url(static/images/slider-3.jpg);"></div>
+                    <div class="overlay-image" style="background-image: url(static/images/slider-3.jpg); opacity: 0.5;"></div>
                     <div class="container">
                         <div class="carousel-caption text-right">
                             <h1>New Sea Shai.</h1>
@@ -814,10 +814,8 @@
 
             <div class="row featurette align-items-center">
                 <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Yes, it's that good. <span class="text-muted">Please come by and try it for yourself!</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                        tellus ac cursus commodo.</p>
+                    <h2 class="featurette-heading">Yes, it's that good. <span class="text-muted">We take pride in our food!</span></h2>
+                    <p class="lead">At New Sea Shai, we take immense pride in every dish we serve. From the freshest ingredients to the meticulous preparation, our commitment to quality and authenticity shines through in every bite. Our passion is creating exceptional Korean and Japanese cuisine, and we're dedicated to delivering an unforgettable dining experience for you.</p>
                 </div>
                 <div class="col-md-5 order-md-1">
                     <img class="featurette-image img-fluid mx-auto my-feat" src="static/images/pajeon.jpg"
@@ -831,19 +829,20 @@
         <!-- END OF THE FEATURETTES -->
 
         <!-- FOOTER -->
-        <footer class="container">
-            <p>&copy; New Sea Shai &middot; <a class="my-link" href="https://www.facebook.com/NewSeaShaiRestaurant">
-                <img src="static/images/facebook-icon-red.png" width="20" height="20" class="d-inline-block align-baseline" alt="fb logo">
-                Facebook</a> &middot;
-                <a class="my-link" href="https://www.yelp.com/biz/new-seashai-restaurant-middletown-3">
-                    <img src="static/images/yelp-icon-red.png" width="20" height="20" class="d-inline-block align-baseline" alt="yelp logo">
-                    Yelp</a> &middot;
-                <a class="my-link" href="https://github.com/maxwelldemaio/seaShai">
-                    <img src="static/images/github-icon.png" width="20" height="20" class="d-inline-block align-baseline" alt="github logo">
-                    Code</a>
-
+        <footer class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <div style="display: flex; gap: 6px;">
+                <div>&copy; New Sea Shai<a class="my-link" href="https://www.facebook.com/NewSeaShaiRestaurant"></div>
+                <div><img src="static/images/facebook-icon-red.png" width="20" height="20" class="d-inline-block align-baseline" alt="fb logo"> Facebook</a></div>
+                <div>
+                    <a class="my-link" href="https://www.yelp.com/biz/new-seashai-restaurant-middletown-3"><img src="static/images/yelp-icon-red.png" width="20" height="20" class="d-inline-block align-baseline" alt="yelp logo"> Yelp</a>
+                </div>
+                <div>
+                    <a class="my-link" href="https://github.com/maxwelldemaio/seaShai"><img src="static/images/github-icon.png" width="20" height="20" class="d-inline-block align-baseline" alt="github logo"> Code</a>
+                </div>
+            </div>
+            <div>
                 <a class="my-link float-right" href="#">Back to top</a>
-            </p>
+            </div>
         </footer>
     </main>
 
