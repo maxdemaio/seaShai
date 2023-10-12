@@ -41,11 +41,14 @@
                             aria-haspopup="true" aria-expanded="false">Links</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item my-link" href="https://www.facebook.com/NewSeaShaiRestaurant">
-                                <img src="static/images/facebook-icon-red.png" width="20" height="20" class="d-inline-block align-top" alt="Facebook icon">
+                                <img src="static/images/facebook-icon-red.png" width="20" height="20" class="d-inline-block align-baseline" alt="Facebook icon">
                                 Visit our Facebook page</a>
                             <a class="dropdown-item my-link" href="https://www.yelp.com/biz/new-seashai-restaurant-middletown-3">
-                                <img src="static/images/yelp-icon-red.png" width="20" height="20" class="d-inline-block align-top" alt="Yelp icon">
+                                <img src="static/images/yelp-icon-red.png" width="20" height="20" class="d-inline-block align-baseline" alt="Yelp icon">
                                 Review us on Yelp</a>
+                                <a class="dropdown-item my-link" href="https://github.com/maxdemaio/seaShai">
+                                    <img src="static/images/github-icon.png" width="20" height="20" class="d-inline-block align-baseline" alt="Yelp icon">
+                                    Code</a>
                         </div>
                     </li>
                 </ul>
@@ -57,9 +60,9 @@
 
         <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li style="opacity: 0.5;" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li style="opacity: 0.5;" data-target="#myCarousel" data-slide-to="1"></li>
+                <li style="opacity: 0.5;" data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -67,8 +70,7 @@
                     <div class="container">
                         <div class="carousel-caption text-right">
                             <h1>New Sea Shai.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p>Discover the soul of Korea and Japan in every bite. Our culinary journey combines the rich traditions of both cultures, crafting a fusion of flavors that is both comforting and exciting. Welcome to a world where tradition meets innovation, and every dish is a delightful adventure.</p>
                         </div>
                     </div>
                 </div>
@@ -77,8 +79,7 @@
                     <div class="container">
                         <div class="carousel-caption text-right">
                             <h1>New Sea Shai.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p>Indulge in the art of sushi and Authentic Japanese Cuisine. Our sushi chefs meticulously craft each roll, while our Japanese menu offers an array of traditional delicacies. Experience the epitome of Japanese flavors and great tasting dishes.</p>
                         </div>
                     </div>
                 </div>
@@ -87,8 +88,7 @@
                     <div class="container">
                         <div class="carousel-caption text-right">
                             <h1>New Sea Shai.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p>Embark on a flavorful journey into the heart of Korea. Our Korean cuisine is a celebration of bold, aromatic dishes, made with love and tradition. Savor the essence of Korea with every bite, as we bring you the very best in authentic Korean flavors.</p>
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
             <div class="container">
                     <div class="col-md-12">
                         <h2 class="display-1">Menu.</h2>
-                        <p class="lead">Call in your order at <strong><span class="my-link">(401)-619-0968</span></strong>. Also, feel free to view
+                        <p class="lead">Please call in your order at <strong><span class="my-link">(401)-619-0968</span></strong>. Also, please feel free to view
                             our <strong><a class="my-link" href="static/images/seaShaiMenu.pdf">PDF version of the menu</a></strong>.
                         <p>
                     </div>
@@ -122,9 +122,6 @@
 
                 <div class="menu-selection collapse" id="apps">
                     <div class="container">
-                        <p class="lead">
-                            Example Structure
-                        </p>
                         <div class="row mb-2">
                             <div class="col-12">
                                 <div class="card">
@@ -776,9 +773,9 @@
 
             <hr class="my-divider">
 
-            <div class="row featurette">
+            <div class="row featurette align-items-center">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading">Stop by. <span class="text-muted">We're local.</span></h2>
+                    <h2 class="featurette-heading">Stop on by. <span class="text-muted">We're local!</span></h2>
                     <p class="lead">Located just a short distance from Newport's beaches, New Sea Shai has been serving award
                     winning authentic Korean and
                     Japanese cuisine since 1987. Whether you're dropping by to pick up sushi, sitting down for a family dinner, or hosting a private Korean/Japanese cocktail party, we strive to
@@ -802,12 +799,10 @@
 
             <hr class="my-divider">
 
-            <div class="row featurette">
+            <div class="row featurette align-items-center">
                 <div class="col-md-7">
                     <h2 class="featurette-heading">About us. <span class="text-muted">Meet our team.</span></h2>
-                    <p class="lead">Charlie and Song...Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
+                    <p class="lead">Charlie and Song, the dynamic duo at New Sea Shai, boast decades of experience in creating heartwarming, authentic dishes. Drawing from their deep love for the culinary traditions of Korea and Japan, they have perfected their craft over the years. Their commitment to excellence and authenticity shines through in every meal they prepare. Join us on a delightful journey, where the flavors and traditions of Korea and Japan converge to create a truly unique dining experience.</p>
                 </div>
                 <div class="col-md-5">
                     <img class="featurette-image img-fluid mx-auto my-feat" src="static/images/songCharlie.png"
@@ -817,10 +812,9 @@
 
             <hr class="my-divider">
 
-            <div class="row featurette">
+            <div class="row featurette align-items-center">
                 <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for
-                            yourself.</span></h2>
+                    <h2 class="featurette-heading">Yes, it's that good. <span class="text-muted">Please come by and try it for yourself!</span></h2>
                     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
                         euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
                         tellus ac cursus commodo.</p>
@@ -839,13 +833,13 @@
         <!-- FOOTER -->
         <footer class="container">
             <p>&copy; New Sea Shai &middot; <a class="my-link" href="https://www.facebook.com/NewSeaShaiRestaurant">
-                <img src="static/images/facebook-icon-red.png" width="20" height="20" class="d-inline-block align-top" alt="">
+                <img src="static/images/facebook-icon-red.png" width="20" height="20" class="d-inline-block align-baseline" alt="fb logo">
                 Facebook</a> &middot;
                 <a class="my-link" href="https://www.yelp.com/biz/new-seashai-restaurant-middletown-3">
-                    <img src="static/images/yelp-icon-red.png" width="20" height="20" class="d-inline-block align-top" alt="">
+                    <img src="static/images/yelp-icon-red.png" width="20" height="20" class="d-inline-block align-baseline" alt="yelp logo">
                     Yelp</a> &middot;
                 <a class="my-link" href="https://github.com/maxwelldemaio/seaShai">
-                    <img src="static/images/github-icon.png" width="20" height="20" class="d-inline-block align-top" alt="">
+                    <img src="static/images/github-icon.png" width="20" height="20" class="d-inline-block align-baseline" alt="github logo">
                     Code</a>
 
                 <a class="my-link float-right" href="#">Back to top</a>
